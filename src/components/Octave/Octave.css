@@ -1,0 +1,57 @@
+.octave {
+    --key-border-width: 0.3vw;
+    --white-key-width: 3vw;
+    --black-key-width: calc(var(--white-key-width) / 2.5);
+
+    height: 100%;
+    width: 20%;
+}
+
+.white-keys {
+    display: flex;
+    height: 100%;
+}
+
+.white-key {
+    height: 100%;
+    width: var(--white-key-width);
+    border: var(--key-border-width) solid #251749;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.white-key.key-pressed,
+.black-key.key-pressed {
+   background-color: #495579
+}
+
+.octave:last-child {
+    border-right: var(--key-border-width) solid #251749;
+}
+
+.black-keys {
+    position: relative;
+    bottom: 100%;
+
+    height: 50%;
+    display: flex;
+}
+
+.black-key {
+    margin-left: calc(var(--white-key-width) - var(--black-key-width));
+    width: var(--black-key-width);
+    height: 100%;
+    background-color: #251749;
+}
+
+.black-key:nth-child(1) {
+    margin-left: calc(var(--white-key-width) - var(--black-key-width) / 2);
+}
+
+.black-key:nth-child(3) {
+    margin-left: calc(var(--white-key-width) + var(--black-key-width));
+}
+
+/*.black-key:nth-child(3) {
+    margin-left: calc(2 * var(--white-key-width) + var(--key-border-width) - var(--black-key-width) / 2)
+}*/

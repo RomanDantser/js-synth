@@ -1,0 +1,5 @@
+.dashboard-item canvas {
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid var(--main-color);
+}

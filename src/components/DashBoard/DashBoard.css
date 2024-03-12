@@ -1,0 +1,35 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 65vh;
+    border-left: 0.3vw solid var(--main-color);
+    border-top: 0.3vw  solid var(--main-color);
+}
+
+.dashboard-item {
+    border-right: 0.3vw  solid var(--main-color);
+    border-bottom: 0.3vw  solid var(--main-color);
+    padding: 0 2.5% 0 2.5%;
+}
+
+.dashboard-item-title,
+.dashboard-item-subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+.dashboard-item-title {
+    font-size: 1.15em;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    padding: 2.5% 0 2.5% 0;
+    margin: 2.5% auto 2.5% auto;
+}
+
+
+.dashboard-item-subtitle {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1.2% auto 1.2% auto;
+}
